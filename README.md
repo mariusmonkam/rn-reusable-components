@@ -31,7 +31,6 @@ export function Button(props) {
       style={[
         styles.button,
         styles.boxWithShadow,
-        styles.pattern,
         { backgroundColor: color },
       ]}
       {...otherProps}
