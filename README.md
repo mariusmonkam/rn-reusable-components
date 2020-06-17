@@ -13,7 +13,7 @@ expo init YourProjectName
 cd YourprojectName
 npm start # you can also use: expo start
 ```
-[Read more about Installin ReactNative with expo here](https://reactnative.dev/docs/environment-setup)
+[Read more about Installing React-native with expo here](https://reactnative.dev/docs/environment-setup)
 
 When your project is ready , create a directory that you can call ##components and a subdirectory
 that you can call ##buttons inside ##buttons 
