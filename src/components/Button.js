@@ -6,12 +6,7 @@ export function Button(props) {
   const { title, color, ...otherProps } = props;
   return (
     <TouchableOpacity
-      style={[
-        styles.button,
-        styles.boxWithShadow,
-        styles.pattern,
-        { backgroundColor: color },
-      ]}
+      style={[styles.button, styles.boxWithShadow, { backgroundColor: color }]}
       {...otherProps}
     >
       <Text style={styles.text}>{title}</Text>
