@@ -1,7 +1,7 @@
 import React from "react";
-import { StyleSheet, Alert, View } from "react-native";
 import { Button } from "./Button";
-export default function HomeButton() {
+import { StyleSheet, View } from "react-native";
+export default function HomeButton({ navigation }) {
   return (
     <View style={styles.container}>
       <View>
@@ -40,6 +40,11 @@ export default function HomeButton() {
           onPress={() => Alert.alert("Guide  me")}
           title="Guide me"
           color="navy"
+        />
+        <Button
+          onPress={() => navigation.navigate("HomeCard")}
+          title="Go to Cards"
+          color="black"
         />
       </View>
     </View>

@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 
 import HomeButton from "./src/components/HomeButton";
+import HomeCard from "./src/components/cards/HomeCard";
 
 const App = () => {
   const Stack = createStackNavigator();
@@ -23,6 +24,11 @@ const App = () => {
           name="HomeButton"
           component={HomeButton}
           options={{ title: "Reusable Buttons" }}
+        />
+        <Stack.Screen
+          name="HomeCard"
+          component={HomeCard}
+          options={{ title: "Reusable ContactCards" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
